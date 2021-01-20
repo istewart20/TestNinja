@@ -15,5 +15,26 @@ namespace TestNinja.UnitTests
             errorLogger.Log("test");
             Assert.That(errorLogger.LastError, Is.EqualTo("test"));
         }
+
+        [Test]
+        public void Log_WhenStringIsNull_ThrowsArgumentNullException()
+        {
+            var errorLogger = new ErrorLogger();
+            Assert.That(() => errorLogger.Log(null), Throws.ArgumentNullException);
+        }
+
+        [Test]
+        public void Log_WhenStringIsEmpty_ThrowsArgumentNullException()
+        {
+            var errorLogger = new ErrorLogger();
+            Assert.That(() => errorLogger.Log(""), Throws.ArgumentNullException);
+        }
+
+        [Test]
+        public void Log_WhenStringIsEmptySpace_ThrowsArgumentNullException()
+        {
+            var errorLogger = new ErrorLogger();
+            Assert.That(() => errorLogger.Log(" "), Throws.ArgumentNullException);
+        }
     }
 }
