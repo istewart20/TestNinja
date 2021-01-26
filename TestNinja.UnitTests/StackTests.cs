@@ -83,7 +83,7 @@ namespace TestNinja.UnitTests
         [Test]
         public void Peek_CalledWhenStackIsEmpty_ThrowsInvalidOperationException()
         {
-            Assert.That(() => _stack.Pop(), Throws.TypeOf<System.InvalidOperationException>());
+            Assert.That(() => _stack.Peek(), Throws.TypeOf<System.InvalidOperationException>());
         }
 
         [Test]
