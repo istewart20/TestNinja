@@ -52,8 +52,10 @@
     <Compile Include="Fundamentals\DateHelper.cs" />
     <Compile Include="Fundamentals\DemeritPointsCalculator.cs" />
     <Compile Include="Fundamentals\ErrorLogger.cs" />
+    <Compile Include="Fundamentals\FileReader.cs" />
     <Compile Include="Fundamentals\FizzBuzz.cs" />
     <Compile Include="Fundamentals\HtmlFormatter.cs" />
+    <Compile Include="Fundamentals\IFileReader.cs" />
     <Compile Include="Fundamentals\Math.cs" />
     <Compile Include="Fundamentals\PhoneNumber.cs" />
     <Compile Include="Fundamentals\Reservation.cs" />
